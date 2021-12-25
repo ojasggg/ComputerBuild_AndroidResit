@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/gray"
+    tools:context=".SignUpActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="SIGN UP"
+                android:textSize="30sp"
+                android:id="@+id/tvSignup"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvsensor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+            </TextView>
+
+
+            <ImageView
+                android:id="@+id/ivRegLogo"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+
+                android:layout_marginBottom="55dp"
+                android:layout_marginTop="18dp"
+                android:contentDescription="TODO"
+                android:scaleType="fitCenter"
+                android:src="@drawable/logo3" />
+            <AutoCompleteTextView
+                android:id="@+id/etUsername"
+                app:drawableStartCompat="@drawable/person"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:layout_margin="15dp"
+                android:textSize="20sp"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/etPhonenumber"
+                app:drawableStartCompat="@drawable/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number"
+                android:layout_margin="15dp"
+                android:textSize="20sp"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/etEmail"
+                app:drawableStartCompat="@drawable/mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:layout_margin="15dp"
+                android:textSize="20sp"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/etLocation"
+                app:drawableStartCompat="@drawable/home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Location"
+                android:layout_margin="15dp"
+                android:textSize="20sp"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/etPassword"
+                app:drawableStartCompat="@drawable/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="New password"
+                android:layout_margin="15dp"
+                android:textSize="20sp"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/etConformPassword"
+                app:drawableStartCompat="@drawable/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Conform password"
+                android:layout_margin="15dp"
+                android:textSize="20sp"/>
+
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSignup"
+                android:layout_marginLeft="25dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+
+                android:layout_marginRight="25dp"
+                android:text="SIGN UP"/>
+
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:id="@+id/btnSignIn"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+
+
+                android:layout_marginRight="25dp"
+                android:text="Already have account"
+
+                />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

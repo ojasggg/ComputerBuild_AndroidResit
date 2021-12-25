@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/custombuild_img"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="150dp"
+                android:layout_height="130dp"
+
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="5dp"
+                tools:srcCompat="@drawable/tux" />
+
+            <TextView
+                android:id="@+id/tvUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@+id/imageView"
+                android:layout_toRightOf="@+id/imageView"
+                android:text="name"
+                android:textSize="20dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvPhonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="phonenumber"
+                android:textSize="20dp"
+                android:layout_margin="5dp"
+                android:layout_toEndOf="@+id/imageView"
+                android:layout_below="@+id/tvUsername"
+                android:layout_toRightOf="@+id/imageView">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="location"
+                android:textSize="20dp"
+                android:layout_margin="5dp"
+                android:layout_toEndOf="@+id/imageView"
+                android:layout_below="@+id/tvPhonenumber"
+                android:layout_toRightOf="@+id/imageView">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textSize="20dp"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/tvLocation"
+                android:layout_toEndOf="@+id/imageView"
+                android:layout_toRightOf="@+id/imageView">
+
+            </TextView>
+
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
